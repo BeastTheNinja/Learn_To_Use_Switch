@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>switch statements easy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/assignmentPage.css">
+    <script src="../js/assignmentpage.js" defer></script>
+
+    <link rel="stylesheet" href="../../opgavefiler/css/easy.css">
+    <script src="../../opgavefiler/js/easy.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section class="assignmentTopSection">
+            <h1>Easy assignments</h1>
+            <nav>
+                <a href="../../index.html">back</a>
+            </nav>
+            <br>
+            <p>easy.</p>
+            <br>
+
+            Små hurtige SWITCH opgaver.
+
+
+            <strong>
+
+                <p>CSS skal skrives i filen: /opgavefiler/js/easy.css </p>
+            </strong>
+
+
+    </header>
+    </section>
+    <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 1</h2>
+            <p>
+                <h3>Instruktioner</h3>
+                <ol>
+                    <li>
+                        skriv en switch struktur der kan vurdere hvilket tal brugeren har tastet ind.
+                    </li>
+                    <li>
+                        skriv følgende ud som info, i konsollen: "du har valgt: (det valgte tal) "
+                    </li>
+                    <li>
+                       skriv evt. en view funktion der kan vise teksten i elementet "myAnsverFeedbackElement".
+                    </li>
+                </ol>
+
+                <form>
+                    <label for="questionOne">Skriv et tal mellem 1 og 5</label><br>
+
+                    <!-- <select id="answerOne" name="questionOne">
+                        <option value="false">ja</option>
+                        <option value="true">nej</option>
+                        <option value="true">ja i disney film</option>
+                    </select> -->
+
+                    <input type="text" name="inputOne" id="InputOne">
+
+                    <button id="answerButtonOne">svar</button>
+                    <h4 id="answerFeedbackOne">opgave svar her.</h4>
+        
+        
+        
+        
+        
+                </form>
+
+            </p>
+           
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        }  
+
+        // view function
+        function showMessage(myMessage){
+            myAnsverFeedbackElement.innerHTML=`&lt;p&gt;${myMessage}&lt;/p&gt;`;
+        }
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+    <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 2</h2>
+            <p>
+                <h3>Instruktioner</h3>
+                <ol>
+                    <li>
+                        Tilføj en default case til koden i opgave 1, der viser hvilket talbrugeren har tastet. <br>
+                        Og en besked om at tallet ikke er tilladt.
+                    </li>
+                    
+                </ol>
+                
+           
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+
+        default:
+            // code block
+        }  
+
+        // view function
+        function showMessage(myMessage){
+            myAnsverFeedbackElement.innerHTML=`&lt;p&gt;${myMessage}&lt;/p&gt;`;
+        }
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+    <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 3</h2>
+            <p>
+                <h3>Instruktioner</h3>
+                <ol>
+                    <li>
+                        skriv en switch struktur der kan vurdere hvilket tal brugeren har tastet ind og der ud fra kan definere hvilken måned tallet svarrer til.
+                    </li>
+                    <li>
+                        skriv den måned der korosponderere til det indtastede tal ud, som info i konsollen (f.eks. "1" for januar, "2" for februar osv.)
+                    </li>
+
+                    <li>
+                        skriv en view function der kan vise din "måned" i elementet "answerFeedbackTwo"
+                    </li>
+
+                </ol>
+
+                <form>
+                    <label for="questionTwo">Skriv et tal mellem 1 og 12</label><br>
+
+                    <!-- <select id="answerOne" name="questionOne">
+                        <option value="false">ja</option>
+                        <option value="true">nej</option>
+                        <option value="true">ja i disney film</option>
+                    </select> -->
+
+                    <input type="text" name="inputTwo" id="InputTwo">
+
+                    <button id="answerButtonTwo">svar</button>
+                    <h4 id="answerFeedbackTwo">opgave svar her.</h4>
+                </form>
+
+            </p>
+           
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        }  
+
+        // view function
+        function showMessage(myMessage){
+            myAnsverFeedbackElement.innerHTML=`&lt;p&gt;${myMessage}&lt;/p&gt;`;
+        }
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+    <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 4</h2>
+            <p>
+                <h3>Instruktioner</h3>
+                <ol>
+                    <li>
+                        Tilføj en default case til opgave 3, der fortæller brugeren at det tal der er tastet ikke er en gyldig måned.
+                    </li>
+                    
+                </ol>
+                
+           
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+
+        default:
+            // code block
+        }  
+
+        // view function
+        function showMessage(myMessage){
+            myAnsverFeedbackElement.innerHTML=`&lt;p&gt;${myMessage}&lt;/p&gt;`;
+        }
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+
+    <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 5</h2>
+            <p>
+                <h3>Instruktioner</h3>
+                <ol>
+                    <li>
+                        skriv en funktion ved navn workDays(), der modtager en tekst streng og vurderer om teksten er (f.eks. "mandag," "tirsdag" osv.). Brug en switch-statement til at vise, om den indtastede ugedag er en arbejdsdag (mandag til fredag) eller en weekenddag (lørdag eller søndag).
+                    </li>
+                    <li>
+                        Hvis ikke der er indtastet en uge dag, skal der gives besked om dette.
+                    </li>
+
+                    <li>
+                        <li>
+                            skriv en view function der kan vise dit feedback til brugeren i elementet "answerFeedbackFive"
+                        </li>
+                    </li>
+
+                    
+                </ol>
+
+                <form>
+                    <label for="questionTwo">Skriv en uge dag</label><br>
+
+                    <!-- <select id="answerOne" name="questionOne">
+                        <option value="false">ja</option>
+                        <option value="true">nej</option>
+                        <option value="true">ja i disney film</option>
+                    </select> -->
+
+                    <input type="text" name="inputFive" id="InputFive">
+
+                    <button id="answerButtonFive">svar</button>
+                    <h4 id="answerFeedbackFive">opgave svar her.</h4>
+                </form>
+
+                
+           
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+
+        default:
+            // code block
+        }  
+
+        // view function
+        function showMessage(myMessage){
+            myAnsverFeedbackElement.innerHTML=`&lt;p&gt;${myMessage}&lt;/p&gt;`;
+        }
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+
+
+    <footer>
+        <nav>
+            <a href="../../index.html">back</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

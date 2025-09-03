@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>switch statements hard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/assignmentPage.css">
+    <script src="../js/assignmentpage.js" defer></script>
+
+    <link rel="stylesheet" href="../../opgavefiler/css/hard.css">
+    <script src="../../opgavefiler/js/hard.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section class="assignmentTopSection">
+            <h1>Eksempler på grug af switch statements</h1>
+            <nav>
+                <a href="../../index.html">back</a>
+            </nav>
+            <br>
+            <br>
+
+           
+
+
+            <strong>
+                <p>kode skal skrives i filen "opgavefiler/js/hard.js"  evt styling i "opgavefiler/css/hard.css" </p>
+            </strong>
+
+
+    </header>
+    </section>
+    <section class="assignmentArea">
+        <header class="hard"></header>
+        <article>
+            <h2>Opgave 1</h2>
+            <p>
+
+            </p>
+            <h3>Instruktioner</h3>
+            
+            Skriv kode, der, udfra formen, kan simulerer en enkel bankautomat. Spørg brugeren, hvilken handling de vil udføre ("Hæv penge," "Indsæt penge" og "saldo"). Brug en switch-statement til at udføre den valgte handling og opdatere saldoen i overensstemmelse hermed i dom elementet med ID "accountSaldo".
+
+<br>
+<br>
+            <h3>Hæv eller Indsæt Penge</h3>
+            <form>
+                <label for="amountInput">Beløb:</label>
+                <input type="number" id="amountInput" name="amount" placeholder="Beløb">
+                <br>
+
+                <label for="transactionType">Transaktionstype:</label>
+                <select id="myTransaction" name="transactionType">
+                    <option value="deposit">indsæt</option>
+                    <option value="withdraw">hæv</option>
+                    <option value="saldo">saldo</option>
+                </select>
+
+                
+              
+                
+            </form>
+
+            <p id="accountSaldo">saldo her</p>
+
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+             
+                <ol>
+                    <li> brug en "global" variabel til at gemme saldi i.</li>
+                    <li>brug en switch statement til at kalde <br>
+                        forskellige transaktioner fra change event</li>
+                        <li>se evt. if then codelab knallert øvelse.</li>
+                </ol>
+                
+                
+           
+            </div>
+           
+        </article>
+
+
+
+    </section>
+
+    <section class="assignmentArea">
+        <header class="hard"></header>
+        <article>
+            <h2>Opgave 2</h2>
+            <p>
+                <h3>Instruktioner</h3>
+                <ol>
+                    <li>
+                        skriv en switch struktur der kan vurdere hvilket tal brugeren har tastet ind og der ud fra kan definere hvilken vejr type tallet korosponderer til.
+                        se vejr koder i linket vejr koder her under.
+                    </li>
+                    
+                    <li>
+                        skriv en view function der kan vise din "vejr type" i elementet "answerFeedbackTwo"
+                    </li>
+
+                    <li>
+                        hvis du kan, så tilføj ikoner for koderne 20 til 29.
+                    </li>
+
+                </ol>
+               
+                <a href="https://www.nodc.noaa.gov/archive/arc0021/0002199/1.1/data/0-data/HTML/WMO-CODE/WMO4677.HTM" target="_blank">vejr koder</a>
+                <br>
+                <br>
+                <br>
+
+                <form>
+                    <label for="questionTwo">Skriv en vejr kode mellem 00 og 99 </label><br>
+
+                   
+
+                    <input type="text" name="inputTwo" id="InputTwo">
+
+                    <button id="answerButtonTwo">svar</button>
+                    <h4 id="answerFeedbackTwo">opgave svar her.</h4>
+                </form>
+
+            </p>
+           
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        }  
+
+        // view function
+        function showMessage(myMessage){
+            myAnsverFeedbackElement.innerHTML=`&lt;p&gt;${myMessage}&lt;/p&gt;`;
+        }
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+
+    <footer>
+        <nav>
+            <a href="../../index.html">back</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

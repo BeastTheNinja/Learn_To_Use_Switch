@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> keyframes basics</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/assignmentPage.css">
+    <script src="../js/assignmentpage.js" defer></script>
+
+    <link rel="stylesheet" href="../../opgavefiler/css/easy.css">
+    <script src="../../opgavefiler/js/firstPage.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section class="assignmentTopSection">
+            <h1>Forståelse af Scope og Hoisting i JavaScript</h1>
+            <nav>
+                <a href="../../index.html">back</a>
+            </nav>
+
+    </header>
+    </section>
+
+    <section class="mainDescription">
+
+
+        <h2>Forskelle i Scope:</h2>
+        <p>
+            <code>var</code>-erklæringer er <strong>funktions scope</strong>, hvilket betyder, at de er begrænset til
+            den
+            funktion, de er deklareret i. De hoistes til toppen af deres funktion.<br>
+            <code>let</code> og <code>const</code>-erklæringer er <strong>blok scope</strong>, de er begrænset til den
+            blok,
+            de
+            er defineret i, og hoistes ikke på samme måde som <code>var</code>.
+        </p>
+
+        <h2>Hoisting:</h2>
+        <p>
+            <strong>Hoisting</strong> er en adfærd i JavaScript, hvor variabeldeklarationer flyttes til toppen af deres
+            scope
+            under kompilering. Dette betyder, at du kan få adgang til en variabel, før den formelt erklæres i koden.
+        </p>
+
+        <h3>Eksempel:</h3>
+        <pre>
+            <code>
+        function eksempel() {
+            console.log(x);  // Udskriver 'undefined' (hoistet)
+            var x = 10;
+            console.log(y);  // Kaster en fejl (ikke hoistet)
+            let y = 20;
+            console.log(z);  // Kaster en fejl (ikke hoistet)
+            const z = 30;
+        }
+            </code>
+            </pre>
+
+        <p>
+            I eksemplet hoistes <code>x</code>, så den er tilgængelig, men udefineret. Både <code>y</code> og
+            <code>z</code>
+            hoistes ikke, så forsøg på at få adgang til dem før deklarationen kaster en fejl.
+        </p>
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+    <footer>
+        <nav>
+            <a href="../../index.html">back</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
